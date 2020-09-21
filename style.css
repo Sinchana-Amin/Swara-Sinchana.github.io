@@ -1,0 +1,462 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.colorchange{
+	animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+	0%{color:red;}
+	25%{color:lightsalmon;}
+	50%{color:yellow;}
+	75%{color:white;}
+	100%{color:lime;}
+}
+.para::first-letter{
+	 font-weight: bold; 
+	 font-size:1.5rem;
+}
+.text_effects{
+	text-shadow: 2px 2px 2px blue;
+	transition: transform 2s;
+}
+
+
+.batman_contact{
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+.batman_contact img{
+	width: 140px; height: 100px;
+	border: 4px solid firebrick;
+	position: absolute; 
+	left: 0; top:-13px;
+	animation-name:batman;
+	animation-duration: 6s;
+	animation-timing-function:linear;/*ease-in,out*/
+	animation-iteration-count: infinite;
+}
+@keyframes batman{
+	from{left:0}
+	to{left:85%;}
+}
+/* or 0%{}
+	  100%{}*/
+
+
+.love_class{
+	width: 70px;
+	height: 60px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	transition-property: transform;/*change in width,height;*/
+	transition-duration: 2s;
+	transition-timing-function: linear;/*in constant speed it will dhadak*/
+}
+.love_class:hover{
+	width: 100px;
+	height: 100px;
+	transform: scale(2, 1);/*3times of hgt50px*/
+}
+
+.img-fluid{
+	width: 300px;height:300px;
+}
+.card{
+	box-shadow: 4px 4px 5px 4px grey;
+}
+.form-control textarea{
+	resize:vertical;
+	overflow:auto;
+}
+/*User Interface in CSS3 resize:verticle,none,horizontal demo
+/*2D transform in CSS3 resize:vertical;overflow:auto;*/
+.text_effects:hover{
+	transform: rotate(360deg);
+}
+
+/*linear gradient*/
+.join_gradient{
+	background-image: linear-gradient(to left,purple,blue);
+}
+/*flexbox  in css3*/
+.flex_css{
+	width: 600%; height: 100px;
+	background-image: linear-gradient(to left,purple,blue);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.img-fluid{
+	width: 300px;
+	height: 300px;
+}
+.imge{
+	width: 300px;
+	height: 350px;
+}
+.imgi{
+	width: 500px;
+	height: 400px;
+	margin-left: 50px;
+}
+
+	
+/*------------------RESPONSIVE------------------*/
+@media(min-width:1024px){
+.abu{
+	margin-left: 10px;
+}
+.abp{
+	margin-left: -10px;
+}
+.imgi{
+	width: 100%;
+	height:370px!important;
+	padding-right:70px;
+	padding-top:50px;
+}
+.container-fluid button{
+	margin-left: 120px;
+}
+.intro{
+	padding-left:90px;
+}
+.para{
+	font-size: 20px;
+	padding-right: 40px;
+} 
+.meghana{
+	width: 220px!important;
+	margin-top: -17px!important
+}
+.footer{
+	margin-bottom:15px!important;
+}
+}
+
+/* -----------------------------min-768px and max-1023px */
+@media(min-width: 768px) and (max-width: 1023px){
+.navbar{
+	font-size: 10px;
+}
+ .imgi{
+	width: 90%;
+	height: 70%!important;
+	margin-left: 20px;
+	margin-top:50px;
+}
+.intro{
+	padding-left:40px;
+}
+.para{
+	padding-right: 40px;
+}
+.container-fluid button{
+	margin-left: 50px;
+}
+.card{
+	margin: 0 30px 0 -45px;
+}
+.lm{
+	margin-left:-27px!important;
+}
+.fs{
+	width: 175px!important;
+	margin-left: 5px;
+}
+.rows{
+	margin-top: -60px;
+}
+.tutor{
+	padding-left: 200px!important;
+	margin-top: 60px;
+}
+.sinchana,.meghana,.sumathi{
+	width: 350px!important;
+}
+.gallery img{
+	width: 500px!important;
+	margin-top:50px!important;
+	margin-left:100px!important;
+}
+.contact-us button{
+	margin-left: 150px!important;
+}
+.cardhov:hover{
+	transform: translateY(-20px);
+}
+}
+
+/* ---------------------------MAX-WIDTH-767---------------------- */
+@media(max-width: 767px){
+.navbar{
+	padding-left: 30px;
+}
+.navbar-toggler{
+	margin-right: 25px;
+}
+.form-inline{
+	padding-left: 200px;
+}
+.imgi{
+	width: 90%;
+	height: auto;
+	padding-right:30px;
+}
+.intro{
+	margin-top: 20px;
+	padding-left:260px;
+	font-size: 30px;
+}
+.para{
+	display: block;
+	padding:0 50px 0 50px;
+	font-size: 15px;
+	word-spacing: 3px;
+}
+.container-fluid button{
+	margin-left: 290px;
+}
+.services{
+	padding-top: -80px;
+}
+.card{
+	margin-bottom: 50px;
+	margin-left: 100px;
+}
+.ctr{
+	margin-top: -70px;
+}
+.gallery img{
+	padding-bottom: 60px;
+}
+.footer{
+	margin-bottom:29px;
+}
+}
+
+/* ---------------------------MAX-WIDTH-627px---------------------- */
+@media(max-width: 627px){
+.navbar{
+	padding-left:40px!important;
+}
+.navbar-toggler{
+	margin-right: 10px;
+}
+.form-inline{
+	padding-left: 100px!important;
+	width: 350px!important;
+}
+.form-inline button{
+	margin-left: 90px;
+}
+
+.container-fluid button{
+	margin-left:230px;
+}
+.intro{
+	margin-left: -50px;
+}
+}
+/* ---------------------------MAX-WIDTH-480px---------------------- */
+@media(max-width:480px){
+.navbar{
+	padding-left:20px!important;
+}
+.imgi{
+	width: 100%;
+	height:auto ;
+	margin-left: 20px;
+	margin-top:-10px;
+}	
+.intro{
+	padding-left:160px!important;
+	padding-top:20px!important;
+}
+.para{
+	display: block;
+	padding:0 30px 0 30px;
+	font-size: 15px;
+	word-spacing: 3px;
+}
+.container-fluid button{
+	margin-left: 110px;
+}
+.container-fluid h1{
+	margin-top:-5px!important;
+}
+.services{
+	margin-top:-50px!important;
+}
+.card{
+	margin-left: 40px!important;
+}
+.lm{
+	width: 200px!important;
+}
+.fs{
+	width: 200px!important;
+}
+.aa{
+	margin-top: -20px!important;
+}
+.contact-now{
+	margin-top: -60px!important;
+}
+.gallery{
+	width: 380px!important;
+}
+.gal{
+	margin-top: -40px!important;
+}
+.secimg{
+	margin-top: -32px;
+}
+.form-group{
+	width: 300px;
+	align-items: center;
+	margin-left:-40px!important;
+}
+.contact-us{
+	margin-top:-30px!important;
+}
+.cont-us{
+	margin-left:-50px!important;
+}
+.contact-us button{
+	margin-left: 70px!important;
+}
+.carousel-inner h3{
+	font-size: 23px!important;
+}
+.carousel-inner p{
+	font-size: 13px!important;
+}
+.footer{
+	padding-top:-40px!important;
+}
+
+}
+
+/* ---------------------------MAX-WIDTH-620px---------------------- */
+@media(max-width:620px){
+.imgi{
+	margin-left: 15px!important;
+}
+.intro{
+	padding-left: 150px!important;
+}
+.para{
+	padding: 0 15px 0 15px;
+}
+.container-fluid button{
+	margin-left: 115px;
+}
+.card{
+	margin-left: 40px!important;
+}
+.gallery{
+	width: 350px!important;
+}
+.contact-now h3,.register h3{
+	font-size: 45px;
+}
+.contact-now img {
+	margin-top: 10px;
+}
+.contact-now button, .register button{
+	margin-bottom: -20px;
+}
+.footer{
+	margin-top:80px!important;
+	margin-bottom: -20px;
+}
+.abu{
+	margin-left: 4px;
+	font-size: 30px;
+}
+.abp{
+	margin-left: -15px;
+	font-size: 15px;
+}
+.modal label{
+	padding-left: 50px;
+}
+.modal input{
+	padding-left: 80px;
+	margin-left: 45px;
+}
+.modal button{
+	margin-bottom: 10px;
+}
+.form-inline{
+	padding-left: 30px!important;
+}
+.form-inline button{
+	margin-left: 120px;
+}
+}
+
+
+/* ---------------------------MAX-WIDTH-377px---------------------- */
+@media(max-width:377px){
+.imgi{
+	margin-top: -25px!important;
+}
+.intro{
+	padding-left: 120px!important;
+}
+.container-fluid button{
+	margin-left: 90px;
+}
+.card{
+	margin-left: 14px!important;
+}
+.gallery{
+	width: 300px!important;
+}
+.gal{
+	margin-top: -20px;
+}
+.rowgal{
+	margin-top: -25px;
+}
+.secimg{
+	margin-top: -35px;
+}
+.contact-now h3,.register h3{
+	font-size: 40px;
+}
+.contact-us{
+	margin-left:-40px;
+}
+.contact-us h1{
+	padding-left: 20px;
+}
+.cont-us{
+	margin-left:-35px!important;
+}
+.form-inline{
+	width: 300px!important;
+	padding-left:20px!important;
+}
+.form-inline button{
+	margin-left: 100px;
+}
+.abp{
+	font-size: 13px;
+}
+.carousel-inner h3{
+	font-size: 23px!important;
+}
+.carousel-inner p{
+	font-size: 13px!important;
+}
+ .aa{
+	margin-top: -50px!important;
+} 
+}
